@@ -1,7 +1,4 @@
-# lawin-cydia
-### Ignore this repository, it is for myself.
-
-My personal Cydia repo containing tweaks that I use.
+# iBread
 
 ## This includes
 ### Tweaks
