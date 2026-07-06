@@ -5,84 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iBread Cydia Repo</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #f5f5f7;
-            color: #1d1d1f;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 90vh;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            text-align: center;
-            max-width: 400px;
-            width: 100%;
-        }
-        img {
-            width: 80px;
-            height: 80px;
-            border-radius: 18px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            font-size: 24px;
-            margin: 15px 0 5px 0;
-        }
-        p {
-            color: #86868b;
-            font-size: 14px;
-            margin-bottom: 25px;
-        }
-        .btn {
-            display: block;
-            background-color: #0071e3;
-            color: white;
-            text-decoration: none;
-            padding: 14px;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: background 0.2s;
-            margin-bottom: 12px;
-        }
-        .btn:hover {
-            background-color: #0077ed;
-        }
-        .url-box {
-            background: #f5f5f7;
-            padding: 10px;
-            border-radius: 8px;
-            font-family: monospace;
-            font-size: 12px;
-            word-break: break-all;
-            border: 1px solid #d2d2d7;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #f5f5f7; color: #1d1d1f; margin: 0; padding: 20px; display: flex; justify-content: center; }
+        .container { max-width: 600px; width: 100%; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        h1 { font-size: 28px; margin-bottom: 5px; text-align: center; }
+        p { color: #86868b; text-align: center; margin-top: 0; }
+        .btn { display: block; background: #0071e3; color: white; text-decoration: none; text-align: center; padding: 12px; border-radius: 8px; font-weight: bold; margin: 20px 0; }
+        .btn:hover { background: #0077ed; }
+        .tweak-list { list-style: none; padding: 0; }
+        .tweak-item { padding: 12px; border-bottom: 1px solid #e5e5e5; display: flex; justify-content: space-between; }
+        .tweak-name { font-weight: 600; }
+        .tweak-version { color: #86868b; font-size: 14px; }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <!-- Pulls the CydiaIcon.png already present in your repository -->
-    <img src="CydiaIcon.png" alt="iBread Icon">
-    <h1>iBread Repo</h1>
-    <p>A custom legacy jailbreak repository hosting classic tweaks and utilities.</p>
-    
-    <!-- Automatic deep links for jailbreak package managers -->
-    <a class="btn" href="cydia://url/https://saurik.com">Add to Cydia</a>
-    <a class="btn" style="background-color: #34c759;" href="sileo://add-source?url=https://github.io">Add to Sileo</a>
-    
-    <div style="margin-top: 20px; text-align: left;">
-        <span style="font-size: 12px; font-weight: 600; color: #1d1d1f;">Manual URL:</span>
-        <div class="url-box">https://github.io</div>
+    <div class="container">
+        <h1>🍞 iBread Repo</h1>
+        <p>A custom legacy package source for jailbroken iOS devices.</p>
+        
+        <!-- This button automatically lets iOS users open your link directly inside Cydia -->
+        <a class="btn" href="cydia://url/https://saurik.com">Add to Cydia</a>
+        
+        <h3>Included Packages</h3>
+        <ul class="tweak-list">
+            <li class="tweak-item"><span class="tweak-name">AppSync Unified</span> <span class="tweak-version">v112.0</span></li>
+            <li class="tweak-item"><span class="tweak-name">SSL Kill Switch 2</span> <span class="tweak-version">v0.14-3</span></li>
+            <li class="tweak-item"><span class="tweak-name">BatteryLife App</span> <span class="tweak-version">v1.7.0</span></li>
+            <li class="tweak-item"><span class="tweak-name">Cylinder</span> <span class="tweak-version">v1.1</span></li>
+            <li class="tweak-item"><span class="tweak-name">LocalIAPStore</span> <span class="tweak-version">v1.4-4</span></li>
+            <li class="tweak-item"><span class="tweak-name">iFile</span> <span class="tweak-version">v2.2.0-1</span></li>
+        </ul>
     </div>
-</div>
-
 </body>
 </html>
+
+
