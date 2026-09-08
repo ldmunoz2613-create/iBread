@@ -1,7 +1,7 @@
-Origin: iBread
-Label: iBread
+Origin: Ghost4568543's Repository
+Label: Ghost4568543's Repository
 Suite: stable
-Version: 1.0
+Version: 2.0
 Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64
 Components: main
